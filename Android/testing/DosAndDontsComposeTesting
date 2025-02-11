@@ -1,0 +1,9 @@
+Guidelines for Jetpack Compose Testing in Android
+Use JUnit for unit tests and Espresso for UI tests to ensure structured and reliable testing.
+Add Compose testing dependencies in build.gradle for proper test execution.
+Use createComposeRule() in test classes to manage Compose UI tests efficiently.
+Leverage Semantics (onNodeWithText(), onNodeWithTag()) instead of findViewById().
+Assign Modifier.testTag() to non-text elements for easy identification in tests.
+Use awaitIdle() and waitForIdle() to ensure UI updates are complete before assertions.
+Use runTest for coroutine-based ViewModel tests to handle asynchronous operations correctly.
+Simulate gestures (performClick(), performScrollTo(), performTextInput()) for UI interactions.
